@@ -1,0 +1,38 @@
+<import src="/components/card.vue.wxml" /><template name="eccded06">
+  <view class="_div data-v-5eca2e54 container" bindtap="handleProxy" wx:if="{{!loading}}" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-5eca2e54 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-5eca2e54 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-5eca2e54 userinfo-nickname"><template data="{{...$root[$kk+'0'], $root}}" is="b68b4aba"></template></view>
+    </view>
+    <i-panel title="标题" class="_i-panel data-v-5eca2e54">
+      <i-cell-group class="_i-cell-group data-v-5eca2e54">
+        <i-cell title="只显示箭头" is-link class="_i-cell data-v-5eca2e54"></i-cell>
+        <i-cell title="跳转到首页" is-link url="/pages/counter/main" class="_i-cell data-v-5eca2e54"></i-cell>
+        <i-cell title="只有 footer 点击有效" is-link url="/pages/dashboard/index" only-tap-footer class="_i-cell data-v-5eca2e54"></i-cell>
+        <i-cell title="开关" class="_i-cell data-v-5eca2e54">
+          <switch slot="footer" checked class="_switch data-v-5eca2e54" />
+        </i-cell>
+      </i-cell-group>
+    </i-panel>
+    <i-panel class="_i-panel data-v-5eca2e54">
+      <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" class="_i-card data-v-5eca2e54">
+        <view slot="content" class="_view data-v-5eca2e54">内容不错</view>
+        <view slot="footer" class="_view data-v-5eca2e54">尾部内容</view>
+      </i-card>
+    </i-panel>
+    <i-panel class="_i-panel data-v-5eca2e54">
+      <view class="_ul data-v-5eca2e54">
+        <view wx:key="index" key="{{index}}" wx:for="{{bannerList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-5eca2e54">
+          <image src="{{'https://img.allchips.com'+item.picUrl}}" alt class="_img data-v-5eca2e54"></image>
+        </view>
+      </view>
+    </i-panel>
+    <i-panel class="_i-panel data-v-5eca2e54">
+      <i-button type="ghost" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_i-button data-v-5eca2e54">只显示文本</i-button>
+      <i-toast id="toast" class="_i-toast data-v-5eca2e54"></i-toast>
+    </i-panel>
+  </view>
+  <view wx:else class="_div data-v-5eca2e54">
+    <i-spin size="large" fix class="_i-spin data-v-5eca2e54"></i-spin>
+  </view>
+</template>
