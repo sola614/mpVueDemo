@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-# mpvuedemo
 mpvue+iview-weapp写的微信小程序demo
-=======
-<<<<<<< HEAD
-# mpvuedemo
-mpvue+iview-weapp写的微信小程序demo
-=======
 # mmpvue
 
 > A Mpvue project
